@@ -301,7 +301,11 @@ http://localhost:5173
 ## Team
 
 곽다희
+```
 https://github.com/dahui7072
+```
 
 나연우
+```
 https://github.com/nowybb
+```
