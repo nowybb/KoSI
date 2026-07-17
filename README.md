@@ -125,7 +125,87 @@ Framing Sensitivity 계산
 
 ## 프로젝트 구조
 
-추후 기재
+```
+KoSI/
+│
+├── README.md
+├── requirements.txt           # 프로젝트에서 사용하는 Python 라이브러리 목록
+├── .env.example               # OpenAI, Claude, Gemini API Key 저장 예시
+├── .gitignore
+│
+├── app.py                     # Streamlit 실행 파일
+│
+├── frontend/                  # 프론트엔드
+│   ├── pages/
+│   │   ├── home.py            # 메인 화면
+│   │   ├── evaluate.py        # 평가 실행
+│   │   ├── result.py          # 결과 조회
+│   │   └── history.py         # 실행 이력
+│   │
+│   ├── components/
+│   │   ├── sidebar.py         # 사이드바 UI
+│   │   ├── charts.py          # Plotly 그래프 생성
+│   │   └── table.py           # 결과 테이블 생성
+│   │
+│   └── assets/
+│       └── logo.png           # 프로젝트 로고 및 이미지
+│
+├── backend/                   # 백엔드
+│   ├── main.py
+│   │
+│   ├── api/
+│   │   ├── evaluation.py      # 평가 실행 API
+│   │   ├── dataset.py         # 질문 데이터셋 관리 API
+│   │   ├── result.py          # 평가 결과 조회 API
+│   │   └── history.py         # 실행 이력 조회 API
+│   │
+│   ├── services/
+│   │   ├── openai_service.py   # GPT API 호출
+│   │   ├── claude_service.py   # Claude API 호출
+│   │   ├── gemini_service.py   # Gemini API 호출
+│   │   ├── paraphrase_service.py  # 질문 패러프레이즈 생성
+│   │   ├── judge_service.py    # LLM-as-Judge 평가
+│   │   └── scoring_service.py  # Consistency Score 계산
+│   │
+│   ├── database/
+│   │   ├── database.py         # DB 연결
+│   │   ├── models.py           # DB 테이블 모델 정의
+│   │   └── crud.py             # DB 저장·조회·수정·삭제(CRUD)
+│   │
+│   └── utils/
+│       ├── logger.py           # 로그 관리
+│       └── config.py           # 환경변수 및 설정 관리
+│
+├── evaluation/                # 평가 알고리즘
+│   ├── bertscore.py           # BERTScore 계산
+│   ├── embedding.py           # Sentence Embedding 및 Cosine Similarity 계산
+│   ├── llm_judge.py           # GPT를 이용한 답변 비교 평가
+│   ├── consistency.py         # 최종 Consistency Score 계산
+│   └── framing.py             # Framing Sensitivity Score 계산
+│
+├── dataset/
+│   ├── original/              # 원본 질문 데이터셋
+│   ├── paraphrase/            # 생성된 패러프레이즈 질문
+│   ├── validated/             # 검수 완료된 질문 데이터셋
+│   └── sample_dataset.csv     # 예시 데이터셋
+│
+├── results/
+│   ├── responses/             # GPT, Claude, Gemini 원본 응답 저장
+│   ├── scores/                # 계산된 점수 저장
+│   └── reports/               # CSV, JSON, 리포트 저장
+│
+├── docs/
+│   ├── 기능명세서.md
+│   ├── API명세서.md
+│   ├── AI모델명세서.md
+│   └── DB설계서.md
+│
+└── tests/
+    ├── test_api.py            # API 테스트
+    ├── test_scoring.py        # 점수 계산 테스트
+    ├── test_model.py          # GPT·Claude·Gemini 연동 테스트
+    └── test_dataset.py        # 데이터셋 검증 테스트
+```
 
 ---
 
@@ -156,11 +236,55 @@ GEMINI_API_KEY=YOUR_KEY
 
 ### Backend 실행
 
-추후 기재
+backend 디렉터리로 이동
+
+```bash
+cd backend
+```
+
+필요한 패키지 설치
+
+```bash
+pip install -r requirements.txt
+```
+
+서버 실행
+
+```bash
+uvicorn app.main:app --reload
+```
+
+기본 주소
+
+```
+http://localhost:8000
+```
 
 ### Frontend 실행
 
-추후 기재
+frontend 디렉터리로 이동
+
+```bash
+cd frontend
+```
+
+필요한 패키지 설치
+
+```bash
+npm install
+```
+
+서버 실행
+
+```bash
+npm run dev
+```
+
+기본 주소
+
+```
+http://localhost:5173
+```
 
 ---
 
