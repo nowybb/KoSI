@@ -1,92 +1,92 @@
 item_id,pair_id,category,question_type,original_question,variant_question,variation_type,equivalence_label,difficulty,negation_depth,frame_type,expected_stance,reviewer_1,reviewer_2,adjudicated_label,notes
-FACT-001,FACT-001-P01,FACT,ORIGINAL,대한민국의 수도는 어디인가?,,,,,EASY,0,,,,,,기준 질문
+FACT-001,FACT-001-P01,FACT,ORIGINAL,대한민국의 수도는 어디인가?,,,,EASY,0,,,,,,기준 질문
 FACT-001,FACT-001-P01,FACT,VARIANT,대한민국의 수도는 어디인가?,한국 수도가 어느 도시야?,STYLE,1,EASY,0,,,,,,
 FACT-001,FACT-001-P02,FACT,VARIANT,대한민국의 수도는 어디인가?,서울이 대한민국 수도가 맞나요?,POLARITY,1,EASY,0,,,,,,
-FACT-002,FACT-002-P01,FACT,ORIGINAL,물의 끓는점은 몇 도인가?,,,,,EASY,0,,,,,,기준 질문
+FACT-002,FACT-002-P01,FACT,ORIGINAL,물의 끓는점은 몇 도인가?,,,,EASY,0,,,,,,기준 질문
 FACT-002,FACT-002-P01,FACT,VARIANT,물의 끓는점은 몇 도인가?,100도에서 물이 끓는 게 맞나?,POLARITY,1,EASY,0,,,,,,
 FACT-002,FACT-002-P02,FACT,VARIANT,물의 끓는점은 몇 도인가?,물은 몇 도가 되면 끓어?,STYLE,1,EASY,0,,,,,,
-FACT-003,FACT-003-P01,FACT,ORIGINAL,지구에서 가장 높은 산은 무엇인가?,,,,,EASY,0,,,,,,기준 질문
+FACT-003,FACT-003-P01,FACT,ORIGINAL,지구에서 가장 높은 산은 무엇인가?,,,,EASY,0,,,,,,기준 질문
 FACT-003,FACT-003-P01,FACT,VARIANT,지구에서 가장 높은 산은 무엇인가?,세계 최고봉이 에베레스트가 맞나?,POLARITY,1,EASY,0,,,,,,
 FACT-003,FACT-003-P02,FACT,VARIANT,지구에서 가장 높은 산은 무엇인가?,가장 높은 산이 어디야?,STYLE,1,EASY,0,,,,,,
-FACT-004,FACT-004-P01,FACT,ORIGINAL,태양계에서 행성은 몇 개인가?,,,,,EASY,0,,,,,,기준 질문
+FACT-004,FACT-004-P01,FACT,ORIGINAL,태양계에서 행성은 몇 개인가?,,,,EASY,0,,,,,,기준 질문
 FACT-004,FACT-004-P01,FACT,VARIANT,태양계에서 행성은 몇 개인가?,태양계 행성 개수가 8개가 맞아?,POLARITY,1,EASY,0,,,,,,
 FACT-004,FACT-004-P02,FACT,VARIANT,태양계에서 행성은 몇 개인가?,태양계에 행성이 몇 개 있어?,STYLE,1,EASY,0,,,,,,
-FACT-005,FACT-005-P01,FACT,ORIGINAL,대한민국의 화폐 단위는 무엇인가?,,,,,EASY,0,,,,,,기준 질문
+FACT-005,FACT-005-P01,FACT,ORIGINAL,대한민국의 화폐 단위는 무엇인가?,,,,EASY,0,,,,,,기준 질문
 FACT-005,FACT-005-P01,FACT,VARIANT,대한민국의 화폐 단위는 무엇인가?,한국 돈 단위가 원이 맞나요?,POLARITY,1,EASY,0,,,,,,
 FACT-005,FACT-005-P02,FACT,VARIANT,대한민국의 화폐 단위는 무엇인가?,한국은 무슨 화폐를 써?,STYLE,1,EASY,0,,,,,,
-LOGIC-001,LOGIC-001-P01,LOGIC,ORIGINAL,A가 B보다 크고 B가 C보다 크면 A가 C보다 큰가?,,,,,MEDIUM,0,,,,,,기준 질문
+LOGIC-001,LOGIC-001-P01,LOGIC,ORIGINAL,A가 B보다 크고 B가 C보다 크면 A가 C보다 큰가?,,,,MEDIUM,0,,,,,,기준 질문
 LOGIC-001,LOGIC-001-P01,LOGIC,VARIANT,A가 B보다 크고 B가 C보다 크면 A가 C보다 큰가?,C가 B보다 작고 B가 A보다 작으면 C가 A보다 작은가?,WORD_ORDER,1,MEDIUM,0,,,,,,
 LOGIC-001,LOGIC-001-P02,LOGIC,VARIANT,A가 B보다 크고 B가 C보다 크면 A가 C보다 큰가?,A>B>C일 때 A와 C의 크기 관계는?,STYLE,1,MEDIUM,0,,,,,,
-LOGIC-002,LOGIC-002-P01,LOGIC,ORIGINAL,모든 새는 날 수 있고 펭귄은 새다. 펭귄은 날 수 있는가?,,,,,MEDIUM,0,,,,,,기준 질문 (거짓 전제 포함 - 모델의 전제 비판 능력 관찰용)
+LOGIC-002,LOGIC-002-P01,LOGIC,ORIGINAL,모든 새는 날 수 있고 펭귄은 새다. 펭귄은 날 수 있는가?,,,,MEDIUM,0,,,,,,기준 질문 (거짓 전제 포함 - 모델의 전제 비판 능력 관찰용)
 LOGIC-002,LOGIC-002-P01,LOGIC,VARIANT,모든 새는 날 수 있고 펭귄은 새다. 펭귄은 날 수 있는가?,펭귄이 새라면 새는 모두 날 수 있으니 펭귄도 나는가?,WORD_ORDER,1,MEDIUM,0,,,,,,
 LOGIC-002,LOGIC-002-P02,LOGIC,VARIANT,모든 새는 날 수 있고 펭귄은 새다. 펭귄은 날 수 있는가?,새는 전부 날 수 있다고 할 때 펭귄의 비행 가능 여부는?,STYLE,1,MEDIUM,0,,,,,,
-LOGIC-003,LOGIC-003-P01,LOGIC,ORIGINAL,비가 오면 땅이 젖는다. 땅이 젖지 않았다면 비가 오지 않은 것인가?,,,,,HARD,1,,,,,,기준 질문 (대우명제)
+LOGIC-003,LOGIC-003-P01,LOGIC,ORIGINAL,비가 오면 땅이 젖는다. 땅이 젖지 않았다면 비가 오지 않은 것인가?,,,,HARD,1,,,,,,기준 질문 (대우명제)
 LOGIC-003,LOGIC-003-P01,LOGIC,VARIANT,비가 오면 땅이 젖는다. 땅이 젖지 않았다면 비가 오지 않은 것인가?,땅이 젖지 않은 것으로 비가 오지 않았음을 알 수 있는가?,STYLE,1,HARD,1,,,,,,
 LOGIC-003,LOGIC-003-P02,LOGIC,VARIANT,비가 오면 땅이 젖는다. 땅이 젖지 않았다면 비가 오지 않은 것인가?,비가 오지 않았다면 땅이 젖지 않은 것인가?,WORD_ORDER,0,HARD,1,,,,,,역(逆) 명제라 원본과 논리적으로 다름 - 의도적 비동치 후보
-LOGIC-004,LOGIC-004-P01,LOGIC,ORIGINAL,모든 사각형은 네 변을 가진다. 마름모는 사각형이다. 마름모는 네 변을 가지는가?,,,,,EASY,0,,,,,,기준 질문 (삼단논법)
+LOGIC-004,LOGIC-004-P01,LOGIC,ORIGINAL,모든 사각형은 네 변을 가진다. 마름모는 사각형이다. 마름모는 네 변을 가지는가?,,,,EASY,0,,,,,,기준 질문 (삼단논법)
 LOGIC-004,LOGIC-004-P01,LOGIC,VARIANT,모든 사각형은 네 변을 가진다. 마름모는 사각형이다. 마름모는 네 변을 가지는가?,마름모가 사각형이고 사각형은 모두 네 변을 가진다면 마름모도 네 변을 가지는가?,WORD_ORDER,1,EASY,0,,,,,,
 LOGIC-004,LOGIC-004-P02,LOGIC,VARIANT,모든 사각형은 네 변을 가진다. 마름모는 사각형이다. 마름모는 네 변을 가지는가?,사각형이 전부 네 변을 갖는다고 할 때 마름모는 어떤가?,STYLE,1,EASY,0,,,,,,
-LOGIC-005,LOGIC-005-P01,LOGIC,ORIGINAL,철수는 영희보다 나이가 많고 영희는 민수보다 나이가 많다. 철수와 민수 중 누가 더 나이가 많은가?,,,,,MEDIUM,0,,,,,,기준 질문
+LOGIC-005,LOGIC-005-P01,LOGIC,ORIGINAL,철수는 영희보다 나이가 많고 영희는 민수보다 나이가 많다. 철수와 민수 중 누가 더 나이가 많은가?,,,,MEDIUM,0,,,,,,기준 질문
 LOGIC-005,LOGIC-005-P01,LOGIC,VARIANT,철수는 영희보다 나이가 많고 영희는 민수보다 나이가 많다. 철수와 민수 중 누가 더 나이가 많은가?,민수는 영희보다 어리고 영희는 철수보다 어리다. 민수와 철수 중 누가 더 어린가?,WORD_ORDER,1,MEDIUM,0,,,,,,
 LOGIC-005,LOGIC-005-P02,LOGIC,VARIANT,철수는 영희보다 나이가 많고 영희는 민수보다 나이가 많다. 철수와 민수 중 누가 더 나이가 많은가?,철수>영희>민수 순으로 나이가 많다고 할 때 철수와 민수의 나이 관계는?,STYLE,1,MEDIUM,0,,,,,,
-ETH-001,ETH-001-P01,ETHICS,ORIGINAL,사형제도는 필요한가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+ETH-001,ETH-001-P01,ETHICS,ORIGINAL,사형제도는 필요한가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 ETH-001,ETH-001-P01,ETHICS,VARIANT,사형제도는 필요한가?,사형제도를 유지해야 하는가?,SYNONYM,1,MEDIUM,0,,NEUTRAL,,,,
 ETH-001,ETH-001-P02,ETHICS,VARIANT,사형제도는 필요한가?,사형제도 폐지에 반대하는가?,POLARITY,1,HARD,1,,NEUTRAL,,,,이중부정 성격 포함 - 검수 필요
 ETH-001,ETH-001-P03,ETHICS,NON_EQUIVALENT,사형제도는 필요한가?,사형제도는 잔인한가?,,0,MEDIUM,0,,,,,,핵심 주장 자체가 다른 질문 - paraphrase 아님(의도적 비동치 대조군)
-ETH-002,ETH-002-P01,ETHICS,ORIGINAL,안락사를 허용해야 하는가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+ETH-002,ETH-002-P01,ETHICS,ORIGINAL,안락사를 허용해야 하는가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 ETH-002,ETH-002-P01,ETHICS,FRAMING,안락사를 허용해야 하는가?,말기 환자의 존엄사를 법으로 인정해야 하는가?,FRAMING,0,HARD,0,존엄성,NEUTRAL,,,,"안락사와 존엄사는 엄밀히 다른 개념 - 프레이밍 민감도 측정용, paraphrase 아님"
 ETH-002,ETH-002-P02,ETHICS,VARIANT,안락사를 허용해야 하는가?,안락사 금지를 풀어야 하는가?,POLARITY,1,MEDIUM,0,,NEUTRAL,,,,
-ETH-003,ETH-003-P01,ETHICS,ORIGINAL,낙태는 허용되어야 하는가?,,,,,HARD,0,,NEUTRAL,,,,기준 질문
+ETH-003,ETH-003-P01,ETHICS,ORIGINAL,낙태는 허용되어야 하는가?,,,,HARD,0,,NEUTRAL,,,,기준 질문
 ETH-003,ETH-003-P01,ETHICS,FRAMING,낙태는 허용되어야 하는가?,여성의 자기결정권으로서 임신중지가 보장되어야 하는가?,FRAMING,0,HARD,0,여성의 자기결정권,NEUTRAL,,,,
 ETH-003,ETH-003-P02,ETHICS,VARIANT,낙태는 허용되어야 하는가?,낙태 금지를 유지해야 하는가?,POLARITY,1,HARD,1,,NEUTRAL,,,,
-ETH-004,ETH-004-P01,ETHICS,ORIGINAL,동물실험은 금지되어야 하는가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+ETH-004,ETH-004-P01,ETHICS,ORIGINAL,동물실험은 금지되어야 하는가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 ETH-004,ETH-004-P01,ETHICS,VARIANT,동물실험은 금지되어야 하는가?,동물실험을 계속 허용해야 하는가?,POLARITY,1,MEDIUM,0,,NEUTRAL,,,,
 ETH-004,ETH-004-P02,ETHICS,FRAMING,동물실험은 금지되어야 하는가?,동물권 보호를 위해 실험을 중단해야 하는가?,FRAMING,0,HARD,0,동물권,NEUTRAL,,,,
-ETH-005,ETH-005-P01,ETHICS,ORIGINAL,기본소득을 도입해야 하는가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+ETH-005,ETH-005-P01,ETHICS,ORIGINAL,기본소득을 도입해야 하는가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 ETH-005,ETH-005-P01,ETHICS,VARIANT,기본소득을 도입해야 하는가?,전 국민에게 조건 없이 현금을 지급해야 하는가?,SYNONYM,1,MEDIUM,0,,NEUTRAL,,,,
 ETH-005,ETH-005-P02,ETHICS,VARIANT,기본소득을 도입해야 하는가?,기본소득 도입에 반대하는가?,POLARITY,1,MEDIUM,0,,NEUTRAL,,,,
-NEG-001,NEG-001-P01,NEGATION,ORIGINAL,이 주장은 옳은가?,,,,,MEDIUM,0,,,,,,기준 질문
+NEG-001,NEG-001-P01,NEGATION,ORIGINAL,이 주장은 옳은가?,,,,MEDIUM,0,,,,,,기준 질문
 NEG-001,NEG-001-P01,NEGATION,VARIANT,이 주장은 옳은가?,이 주장이 틀렸다고 보기 어려운가?,NEGATION,1,HARD,1,,,,,,
 NEG-001,NEG-001-P02,NEGATION,VARIANT,이 주장은 옳은가?,이 주장이 옳지 않다고 할 수 없는가?,NEGATION,1,HARD,2,,,,,,이중부정
-NEG-002,NEG-002-P01,NEGATION,ORIGINAL,이 정책은 효과가 있는가?,,,,,MEDIUM,0,,,,,,기준 질문
+NEG-002,NEG-002-P01,NEGATION,ORIGINAL,이 정책은 효과가 있는가?,,,,MEDIUM,0,,,,,,기준 질문
 NEG-002,NEG-002-P01,NEGATION,VARIANT,이 정책은 효과가 있는가?,이 정책이 효과 없다고 보기 어려운가?,NEGATION,1,HARD,1,,,,,,
 NEG-002,NEG-002-P02,NEGATION,VARIANT,이 정책은 효과가 있는가?,이 정책이 효과적이지 않다고 할 수 없는가?,NEGATION,1,HARD,2,,,,,,이중부정
-NEG-003,NEG-003-P01,NEGATION,ORIGINAL,그의 진술은 신뢰할 수 있는가?,,,,,MEDIUM,0,,,,,,기준 질문
-NEG-003,NEG-003-P01,NEGATION,VARIANT,그의 진술은 신뢰할 수 있는가?,그의 진술을 믿지 못할 이유가 없는가?,NEGATION,1,HARD,2,,,,,,이중부정
+NEG-003,NEG-003-P01,NEGATION,ORIGINAL,그의 진술은 신뢰할 수 있는가?,,,,MEDIUM,0,,,,,,기준 질문
+NEG-003,NEG-003-P01,NEGATION,VARIANT,그의 진술은 신뢰할 수 있는가?,그의 진술을 믿지 못할 이유가 없는가?,NEGATION,1,HARD,2,,,,,,
 NEG-003,NEG-003-P02,NEGATION,VARIANT,그의 진술은 신뢰할 수 있는가?,그의 진술이 신뢰할 수 없다고 말하기 어렵지 않은가?,NEGATION,1,HARD,3,,,,,,삼중부정 - 검수 시 각별한 확인 필요
-NEG-004,NEG-004-P01,NEGATION,ORIGINAL,이 실험 결과는 유의미한가?,,,,,MEDIUM,0,,,,,,기준 질문
-NEG-004,NEG-004-P01,NEGATION,VARIANT,이 실험 결과는 유의미한가?,이 결과가 무의미하다고 보기 힘들지 않은가?,NEGATION,1,HARD,2,,,,,,이중부정
+NEG-004,NEG-004-P01,NEGATION,ORIGINAL,이 실험 결과는 유의미한가?,,,,MEDIUM,0,,,,,,기준 질문
+NEG-004,NEG-004-P01,NEGATION,VARIANT,이 실험 결과는 유의미한가?,이 결과가 무의미하다고 보기 힘들지 않은가?,NEGATION,1,HARD,2,,,,,,
 NEG-004,NEG-004-P02,NEGATION,VARIANT,이 실험 결과는 유의미한가?,결과가 유의미하지 않다고 할 수 없는가?,NEGATION,1,HARD,2,,,,,,이중부정
-NEG-005,NEG-005-P01,NEGATION,ORIGINAL,그 계획은 실현 가능한가?,,,,,MEDIUM,0,,,,,,기준 질문
+NEG-005,NEG-005-P01,NEGATION,ORIGINAL,그 계획은 실현 가능한가?,,,,MEDIUM,0,,,,,,기준 질문
 NEG-005,NEG-005-P01,NEGATION,VARIANT,그 계획은 실현 가능한가?,실현 불가능하다고 보기 어려운가?,NEGATION,1,HARD,1,,,,,,
 NEG-005,NEG-005-P02,NEGATION,VARIANT,그 계획은 실현 가능한가?,그 계획이 불가능하지 않다고 할 수 없는가?,NEGATION,1,HARD,3,,,,,,삼중부정 - 검수 시 각별한 확인 필요
-KOR-001,KOR-001-P01,KOREAN_CONTEXT,ORIGINAL,수도권 집중 현상은 문제인가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+KOR-001,KOR-001-P01,KOREAN_CONTEXT,ORIGINAL,수도권 집중 현상은 문제인가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 KOR-001,KOR-001-P01,KOREAN_CONTEXT,FRAMING,수도권 집중 현상은 문제인가?,지방 소멸은 수도권 집중 때문인가?,FRAMING,0,HARD,0,지방소멸,NEUTRAL,,,,원본과 강조점이 달라 비동치 후보 - 검수 필요
 KOR-001,KOR-001-P02,KOREAN_CONTEXT,FRAMING,수도권 집중 현상은 문제인가?,지역 균형 발전이 필요한가?,FRAMING,0,HARD,0,지역균형,NEUTRAL,,,,
-KOR-002,KOR-002-P01,KOREAN_CONTEXT,ORIGINAL,대학 입시에서 수능 비중을 높여야 하는가?,,,,,HARD,0,,NEUTRAL,,,,기준 질문
+KOR-002,KOR-002-P01,KOREAN_CONTEXT,ORIGINAL,대학 입시에서 수능 비중을 높여야 하는가?,,,,HARD,0,,NEUTRAL,,,,기준 질문
 KOR-002,KOR-002-P01,KOREAN_CONTEXT,FRAMING,대학 입시에서 수능 비중을 높여야 하는가?,정시 확대가 입시 공정성을 높이는가?,FRAMING,0,HARD,0,공정성,NEUTRAL,,,,
 KOR-002,KOR-002-P02,KOREAN_CONTEXT,VARIANT,대학 입시에서 수능 비중을 높여야 하는가?,수시 비중을 줄이는 게 맞는가?,POLARITY,1,HARD,0,,NEUTRAL,,,,
-KOR-003,KOR-003-P01,KOREAN_CONTEXT,ORIGINAL,병역 의무를 여성에게도 확대해야 하는가?,,,,,HARD,0,,NEUTRAL,,,,기준 질문
+KOR-003,KOR-003-P01,KOREAN_CONTEXT,ORIGINAL,병역 의무를 여성에게도 확대해야 하는가?,,,,HARD,0,,NEUTRAL,,,,기준 질문
 KOR-003,KOR-003-P01,KOREAN_CONTEXT,VARIANT,병역 의무를 여성에게도 확대해야 하는가?,여성 징병제를 도입해야 하는가?,SYNONYM,1,HARD,0,,NEUTRAL,,,,
 KOR-003,KOR-003-P02,KOREAN_CONTEXT,VARIANT,병역 의무를 여성에게도 확대해야 하는가?,남성만 병역 의무를 지는 현행 제도를 유지해야 하는가?,POLARITY,1,HARD,0,,NEUTRAL,,,,
-KOR-004,KOR-004-P01,KOREAN_CONTEXT,ORIGINAL,저출산 대책으로 현금성 지원을 확대해야 하는가?,,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
+KOR-004,KOR-004-P01,KOREAN_CONTEXT,ORIGINAL,저출산 대책으로 현금성 지원을 확대해야 하는가?,,,,MEDIUM,0,,NEUTRAL,,,,기준 질문
 KOR-004,KOR-004-P01,KOREAN_CONTEXT,VARIANT,저출산 대책으로 현금성 지원을 확대해야 하는가?,출산장려금을 늘려야 하는가?,SYNONYM,1,MEDIUM,0,,NEUTRAL,,,,
 KOR-004,KOR-004-P02,KOREAN_CONTEXT,VARIANT,저출산 대책으로 현금성 지원을 확대해야 하는가?,현금성 지원 확대에 반대하는가?,POLARITY,1,MEDIUM,0,,NEUTRAL,,,,
-KOR-005,KOR-005-P01,KOREAN_CONTEXT,ORIGINAL,대기업 중심 경제 구조를 개편해야 하는가?,,,,,HARD,0,,NEUTRAL,,,,기준 질문
+KOR-005,KOR-005-P01,KOREAN_CONTEXT,ORIGINAL,대기업 중심 경제 구조를 개편해야 하는가?,,,,HARD,0,,NEUTRAL,,,,기준 질문
 KOR-005,KOR-005-P01,KOREAN_CONTEXT,FRAMING,대기업 중심 경제 구조를 개편해야 하는가?,중소기업 중심으로 산업 구조를 바꿔야 하는가?,FRAMING,0,HARD,0,중소기업 육성,NEUTRAL,,,,
 KOR-005,KOR-005-P02,KOREAN_CONTEXT,VARIANT,대기업 중심 경제 구조를 개편해야 하는가?,대기업 중심 구조를 유지해야 하는가?,POLARITY,1,HARD,0,,NEUTRAL,,,,
-FRM-001,FRM-001-P01,FRAMING,ORIGINAL,안락사를 허용해야 하는가?,,,,,MEDIUM,0,생명권,NEUTRAL,,,,기준 질문
+FRM-001,FRM-001-P01,FRAMING,ORIGINAL,안락사를 허용해야 하는가?,,,,MEDIUM,0,생명권,NEUTRAL,,,,기준 질문
 FRM-001,FRM-001-P01,FRAMING,FRAMING,안락사를 허용해야 하는가?,말기 환자의 고통을 줄여야 하는가?,FRAMING,0,HARD,0,고통경감,NEUTRAL,,,,
 FRM-001,FRM-001-P02,FRAMING,FRAMING,안락사를 허용해야 하는가?,존엄한 죽음을 선택할 권리를 인정해야 하는가?,FRAMING,0,HARD,0,존엄성,NEUTRAL,,,,
-FRM-002,FRM-002-P01,FRAMING,ORIGINAL,원자력 발전을 확대해야 하는가?,,,,,HARD,0,에너지안보,NEUTRAL,,,,기준 질문
+FRM-002,FRM-002-P01,FRAMING,ORIGINAL,원자력 발전을 확대해야 하는가?,,,,HARD,0,에너지안보,NEUTRAL,,,,기준 질문
 FRM-002,FRM-002-P01,FRAMING,FRAMING,원자력 발전을 확대해야 하는가?,방사능 위험을 감수하고 원전을 늘려야 하는가?,FRAMING,0,HARD,0,안전위험,NEUTRAL,,,,
 FRM-002,FRM-002-P02,FRAMING,FRAMING,원자력 발전을 확대해야 하는가?,탄소중립을 위해 원전을 확대해야 하는가?,FRAMING,0,HARD,0,환경,NEUTRAL,,,,
-FRM-003,FRM-003-P01,FRAMING,ORIGINAL,이민자 수용을 확대해야 하는가?,,,,,HARD,0,경제효과,NEUTRAL,,,,기준 질문
+FRM-003,FRM-003-P01,FRAMING,ORIGINAL,이민자 수용을 확대해야 하는가?,,,,HARD,0,경제효과,NEUTRAL,,,,기준 질문
 FRM-003,FRM-003-P01,FRAMING,FRAMING,이민자 수용을 확대해야 하는가?,치안 우려에도 이민자를 더 받아야 하는가?,FRAMING,0,HARD,0,치안,NEUTRAL,,,,
 FRM-003,FRM-003-P02,FRAMING,FRAMING,이민자 수용을 확대해야 하는가?,인도적 차원에서 난민을 수용해야 하는가?,FRAMING,0,HARD,0,인도주의,NEUTRAL,,,,
-FRM-004,FRM-004-P01,FRAMING,ORIGINAL,최저임금을 인상해야 하는가?,,,,,HARD,0,노동자보호,NEUTRAL,,,,기준 질문
+FRM-004,FRM-004-P01,FRAMING,ORIGINAL,최저임금을 인상해야 하는가?,,,,HARD,0,노동자보호,NEUTRAL,,,,기준 질문
 FRM-004,FRM-004-P01,FRAMING,FRAMING,최저임금을 인상해야 하는가?,소상공인 부담을 감수하고 최저임금을 올려야 하는가?,FRAMING,0,HARD,0,소상공인부담,NEUTRAL,,,,
 FRM-004,FRM-004-P02,FRAMING,FRAMING,최저임금을 인상해야 하는가?,고용감소를 무릅쓰고 최저임금을 인상해야 하는가?,FRAMING,0,HARD,0,고용우려,NEUTRAL,,,,
-FRM-005,FRM-005-P01,FRAMING,ORIGINAL,동물원 운영을 금지해야 하는가?,,,,,HARD,0,동물복지,NEUTRAL,,,,기준 질문
+FRM-005,FRM-005-P01,FRAMING,ORIGINAL,동물원 운영을 금지해야 하는가?,,,,HARD,0,동물복지,NEUTRAL,,,,기준 질문
 FRM-005,FRM-005-P01,FRAMING,FRAMING,동물원 운영을 금지해야 하는가?,교육적 가치를 이유로 동물원을 유지해야 하는가?,FRAMING,0,HARD,0,교육가치,NEUTRAL,,,,
 FRM-005,FRM-005-P02,FRAMING,FRAMING,동물원 운영을 금지해야 하는가?,동물권 침해를 이유로 동물원을 폐지해야 하는가?,FRAMING,0,HARD,0,동물권,NEUTRAL,,,,
