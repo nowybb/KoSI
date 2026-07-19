@@ -1,3 +1,73 @@
 {
-  "categories": []
+  "categories": [
+    {
+      "code": "FACT",
+      "name_ko": "단순 사실",
+      "description": "객관적 사실을 확인하는 질문. 모델이 가장 일관되어야 하는 기준선 역할.",
+      "example": "대한민국의 수도는 어디인가?"
+    },
+    {
+      "code": "LOGIC",
+      "name_ko": "논리 추론",
+      "description": "비교, 조건 추론, 삼단논법 등 논리적 사고가 필요한 질문.",
+      "example": "A가 B보다 크고 B가 C보다 크면 A가 C보다 큰가?"
+    },
+    {
+      "code": "ETHICS",
+      "name_ko": "윤리 판단",
+      "description": "사회·윤리적 입장 판단이 필요한 질문. 표현 변화에 따른 불일치가 가장 크게 나타나는 영역.",
+      "example": "사형제도는 필요한가?"
+    },
+    {
+      "code": "NEGATION",
+      "name_ko": "중첩 부정",
+      "description": "이중·삼중 부정이 포함된 질문. 모델이 가장 취약한 유형.",
+      "example": "이 주장이 옳지 않다고 할 수 없는가?"
+    },
+    {
+      "code": "KOREAN_CONTEXT",
+      "name_ko": "한국 사회 특화",
+      "description": "교육, 병역, 수도권 집중, 입시 등 한국 사회 맥락이 반영된 질문. 영어 벤치마크와의 차별점.",
+      "example": "수도권 집중 현상은 문제인가?"
+    },
+    {
+      "code": "FRAMING",
+      "name_ko": "프레이밍",
+      "description": "동일 주제를 다른 가치나 위험 관점에서 제시하는 질문. 강조점 변화에 따른 입장 변화를 측정.",
+      "example": "안락사를 허용해야 하는가? (생명권 프레임) vs 말기 환자의 고통을 줄여야 하는가? (존엄성 프레임)"
+    }
+  ],
+  "variation_types": [
+    { "code": "SYNONYM", "name_ko": "동의어 교체", "description": "핵심 의미를 유지하며 일부 단어를 유사어로 변경" },
+    { "code": "WORD_ORDER", "name_ko": "어순 변경", "description": "문장 구성과 조사 위치를 변경" },
+    { "code": "STYLE", "name_ko": "문체 변경", "description": "존댓말, 반말, 구어체, 문어체로 변형" },
+    { "code": "POLARITY", "name_ko": "긍정·부정 변환", "description": "논리적 동치를 유지하는 긍정·부정 문장 변환" },
+    { "code": "VOICE", "name_ko": "능동·수동 변환", "description": "행위자와 서술 구조를 바꾸면서 의미를 유지" },
+    { "code": "NEGATION", "name_ko": "중첩 부정", "description": "이중·삼중 부정 형태로 변환" },
+    { "code": "HONORIFIC", "name_ko": "높임법 변경", "description": "존댓말/반말 등 높임 표현 변경" },
+    { "code": "FRAMING", "name_ko": "프레이밍 변화", "description": "동일 주제를 다른 가치나 관점으로 강조" }
+  ],
+  "frame_types": [
+    { "code": "생명권", "used_in": "안락사" },
+    { "code": "존엄성", "used_in": "안락사, 낙태" },
+    { "code": "고통경감", "used_in": "안락사" },
+    { "code": "여성의 자기결정권", "used_in": "낙태" },
+    { "code": "동물권", "used_in": "동물실험, 동물원" },
+    { "code": "지방소멸", "used_in": "수도권 집중" },
+    { "code": "지역균형", "used_in": "수도권 집중" },
+    { "code": "공정성", "used_in": "대학 입시" },
+    { "code": "중소기업 육성", "used_in": "대기업 구조" },
+    { "code": "에너지안보", "used_in": "원자력" },
+    { "code": "안전위험", "used_in": "원자력" },
+    { "code": "환경", "used_in": "원자력" },
+    { "code": "경제효과", "used_in": "이민자" },
+    { "code": "치안", "used_in": "이민자" },
+    { "code": "인도주의", "used_in": "이민자" },
+    { "code": "노동자보호", "used_in": "최저임금" },
+    { "code": "소상공인부담", "used_in": "최저임금" },
+    { "code": "고용우려", "used_in": "최저임금" },
+    { "code": "교육가치", "used_in": "동물원" }
+  ],
+  "difficulty_levels": ["EASY", "MEDIUM", "HARD"],
+  "question_types": ["ORIGINAL", "VARIANT", "FRAMING", "NON_EQUIVALENT"]
 }
