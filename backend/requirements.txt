@@ -1,0 +1,9 @@
+anyio @ file:///opt/miniconda3/conda-bld/anyio_1758623422202/work
+click @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_2bwamfk1ra/croot/click_1754477943404/work
+fastapi==0.136.1
+h11 @ file:///opt/miniconda3/conda-bld/h11_1761931258823/work
+pydantic @ file:///opt/miniconda3/conda-bld/pydantic_1764083527102/work
+pydantic-settings @ file:///opt/miniconda3/conda-bld/pydantic-settings_1764165151428/work
+pydantic_core @ file:///opt/miniconda3/conda-bld/pydantic-core_1764009784214/work
+starlette==1.0.0
+uvicorn==0.47.0
