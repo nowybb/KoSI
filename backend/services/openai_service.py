@@ -1,5 +1,3 @@
-"""OpenAI GPT API 호출 기능."""
-
 """OpenAI Responses API 호출 서비스."""
 
 from __future__ import annotations
