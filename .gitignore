@@ -18,3 +18,5 @@ results/
 
 # Logs
 *.log
+
+.DS_Store
