@@ -217,7 +217,9 @@ KoSI/
 │   ├── database/
 │   │   ├── database.py         # DB 연결
 │   │   ├── models.py           # DB 테이블 모델 정의
-│   │   └── crud.py             # DB 저장·조회·수정·삭제(CRUD)
+│   │   └── crud.py             # DB 저장·조회·수정·삭제
+│   │   └── migration.py        # DB 스키마 생성(테이블 최초 생성)
+(CRUD)
 │   │
 │   └── utils/
 │       ├── logger.py           # 로그 관리
