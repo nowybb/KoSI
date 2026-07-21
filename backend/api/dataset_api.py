@@ -1,6 +1,3 @@
-# backend/api/dataset_api.py
-# 질문 CRUD API
-
 """
 KoSI - 질문 관리 API
 
@@ -24,13 +21,17 @@ import os
 from typing import Optional, List
 
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 
 # backend/database 를 import 경로에 추가
 # (backend/api/dataset_api.py 에서 backend/database/crud.py, models.py 를 바로 가져오기 위함)
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "database"))
+# backend/services 를 import 경로에 추가 (dataset_manager.py - 통계/완성도/내보내기)
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "services"))
 
 import crud
+import dataset_manager
 from models import (
     Question, DOMAINS, QUESTION_FORMS, VARIATION_TYPES,
     DIFFICULTIES, EXPECTED_STANCES, QUESTION_TYPES,
@@ -199,3 +200,27 @@ def delete_question(question_id: str):
         error_response(404, "NOT_FOUND", "존재하지 않는 질문입니다.", str(e))
 
     return {"deleted": True}
+
+
+# ---------------------------------------------------------------------------
+# 데이터셋 관리 (dataset_manager.py 연동) - 프론트 '데이터셋 관리 화면' 통계용
+# ---------------------------------------------------------------------------
+
+@app.get("/api/v1/dataset/stats")
+def get_dataset_stats():
+    """전체/도메인별/유형별/변형타입별 개수, 검수(동치 라벨링) 진행률."""
+    return dataset_manager.get_dataset_stats()
+
+
+@app.get("/api/v1/dataset/completeness")
+def get_dataset_completeness():
+    """원본마다 변형 8종이 다 채워져 있는지 점검. 빠진 원본/타입을 함께 반환."""
+    return dataset_manager.get_completeness_report()
+
+
+@app.get("/api/v1/dataset/export")
+def export_dataset():
+    """현재 DB의 questions 테이블 전체를 CSV로 내보내고 다운로드 경로를 반환."""
+    output_path = "/tmp/kosi_dataset_export.csv"
+    path = dataset_manager.export_dataset_csv(output_path)
+    return FileResponse(path, filename="question_export.csv", media_type="text/csv")
